@@ -8,7 +8,7 @@ Alunos:
 Descrição: 
 - O trabalho ira consistir em um tocador de musicas. Nele irá possuir uma tela de login, e de cadastro, depois de 
 logado o usuário terá acesso a um menu, no qual esse menu irá conter o nome, foto e e uma area para tocar a música.
-As musicas já terá sido cadastrada, tendo um administador para gereciar as musicas, cadastrando, editando e excluindo as mesmas.
+O APP terá um administador para gereciar as musicas, cadastrando, editando e excluindo as mesmas.
 
 Papeis: 
 - Administrador: gereciar musicas.
