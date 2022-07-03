@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Tela_Principal">
+
+    <View
+        android:id="@+id/Conteiner_tela_principal"
+        style="@style/ContainerComponent3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Conteiner_user_principal"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/conteiner_user2"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Conteiner_tela_principal"
+        app:layout_constraintBottom_toBottomOf="@id/Conteiner_tela_principal"
+        />
+
+    <TextView
+        android:id="@+id/text_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/roxoEscuro"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toEndOf="@+id/Conteiner_user_principal"
+        app:layout_constraintTop_toTopOf="@+id/Conteiner_tela_principal"
+        app:layout_constraintBottom_toBottomOf="@+id/Conteiner_tela_principal"
+        />
+
+    <ImageView
+        android:id="@+id/Logout"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/ic_logout"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toTopOf="@id/Conteiner_tela_principal"
+        app:layout_constraintBottom_toBottomOf="@id/Conteiner_tela_principal"
+        app:layout_constraintEnd_toEndOf="@id/Conteiner_tela_principal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/button_cad_tarefas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_add"
+                android:backgroundTint="@color/white"
+                />
+            
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </LinearLayout>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
