@@ -72,8 +72,9 @@ public class Cadastro extends AppCompatActivity {
                 String nome = edit_nome.getText().toString();
                 String email = edit_email.getText().toString();
                 String senha = edit_senha.getText().toString();
+                String foto = btnSelectedPhoto.getContext().toString();
 
-                if (nome.isEmpty() || email.isEmpty() || senha.isEmpty()){
+                if (foto != null || nome.isEmpty() || email.isEmpty() || senha.isEmpty()){
                     Snackbar snackbar = Snackbar.make(view,mensagens[0],Snackbar.LENGTH_SHORT);
                     snackbar.setBackgroundTint(Color.WHITE);
                     snackbar.setTextColor(Color.BLACK);
@@ -97,8 +98,6 @@ public class Cadastro extends AppCompatActivity {
                 if(task.isSuccessful()){
 
                     SalvarDadosUser();
-
-
 
                     Snackbar snackbar = Snackbar.make(view,mensagens[1],Snackbar.LENGTH_SHORT);
                     snackbar.setBackgroundTint(Color.WHITE);
@@ -170,12 +169,6 @@ public class Cadastro extends AppCompatActivity {
                 Log.e("teste-erro", e.getMessage(), e);
             }
         });
-
-
-
-
-
-
 
     }
 
