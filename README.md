@@ -11,9 +11,9 @@ Descrição:
 Papeis:
 - Usuario: cadastrar, editar, excluir tarefa.
 
-ATENÇÃO!!!
-Possivel erro na execução do sistema é devido a versão do AndroidStudio.
-Para concertar isso; siga os seguintes passos:
-1- No menu do AndroidStudio vá para aba "Help";
-2- Siga para "Check for updates";
+ATENÇÃO!!!\n
+Possivel erro na execução do sistema é devido a versão do AndroidStudio.*
+Para concertar isso; siga os seguintes passos:*
+1- No menu do AndroidStudio vá para aba "Help";*
+2- Siga para "Check for updates";*
 3- Espere o downloads das possíveis pendências.
