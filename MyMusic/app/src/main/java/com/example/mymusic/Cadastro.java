@@ -45,6 +45,7 @@ public class Cadastro extends AppCompatActivity {
     private View btnSelectedPhoto;
     private ImageView mImagePhoto, iconPhoto;
     private Uri mSelectedUri;
+    private  Boolean verificar_foto = false;
 
     String[] mensagens = {"Preencha todos os campos","Usuário cadastro com sucesso"};
     String usuarioID;
@@ -72,9 +73,8 @@ public class Cadastro extends AppCompatActivity {
                 String nome = edit_nome.getText().toString();
                 String email = edit_email.getText().toString();
                 String senha = edit_senha.getText().toString();
-                String foto = btnSelectedPhoto.getContext().toString();
 
-                if (foto != null || nome.isEmpty() || email.isEmpty() || senha.isEmpty()){
+                if (nome.isEmpty() || email.isEmpty() || senha.isEmpty() || verificar_foto == false){
                     Snackbar snackbar = Snackbar.make(view,mensagens[0],Snackbar.LENGTH_SHORT);
                     snackbar.setBackgroundTint(Color.WHITE);
                     snackbar.setTextColor(Color.BLACK);
@@ -195,6 +195,7 @@ public class Cadastro extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
         intent.setType("image/*");
         startActivityForResult(intent,0);
+        verificar_foto = true;
     }
 
     private void IniciarComponents(){
