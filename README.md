@@ -2,7 +2,7 @@
 
 Alunos: 
 - João Vitor Dutra Moitinho // 2020.1906.043-1
-- Manuel Augusto De Oliveira // Matias Neto /
+- Manuel Augusto De Oliveira // 2020.1906.029-6
 - Thiago Kenji Yamauchi // 2020.1906.024-5
 
 Descrição: 
